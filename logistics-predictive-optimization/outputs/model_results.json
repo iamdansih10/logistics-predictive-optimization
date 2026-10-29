@@ -1,0 +1,76 @@
+{
+  "n_train": 4000,
+  "n_test": 1000,
+  "models": {
+    "Baseline (mean)": {
+      "cv_rmse": 11.98,
+      "cv_std": 0.45,
+      "test_rmse": 11.51,
+      "test_mae": 8.57,
+      "test_r2": -0.002
+    },
+    "Linear regression": {
+      "cv_rmse": 5.95,
+      "cv_std": 0.21,
+      "test_rmse": 6.07,
+      "test_mae": 3.95,
+      "test_r2": 0.722
+    },
+    "Decision tree": {
+      "cv_rmse": 3.01,
+      "cv_std": 0.14,
+      "test_rmse": 2.86,
+      "test_mae": 2.25,
+      "test_r2": 0.938
+    },
+    "Random forest": {
+      "cv_rmse": 2.44,
+      "cv_std": 0.1,
+      "test_rmse": 2.32,
+      "test_mae": 1.81,
+      "test_r2": 0.959
+    },
+    "Gradient boosting": {
+      "cv_rmse": 2.21,
+      "cv_std": 0.04,
+      "test_rmse": 2.16,
+      "test_mae": 1.67,
+      "test_r2": 0.965
+    }
+  },
+  "best_params": {
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "n_estimators": 200
+  },
+  "tuned": {
+    "cv_rmse": 2.2,
+    "test_rmse": 2.12,
+    "test_mae": 1.67,
+    "test_r2": 0.966
+  },
+  "temporal": {
+    "rmse": 2.55,
+    "mae": 1.91,
+    "r2": 0.959,
+    "train_rows": 3726,
+    "test_rows": 1274
+  },
+  "importance_rmse_increase": {
+    "distance_km": 13.97,
+    "mode": 9.92,
+    "carrier": 0.9,
+    "hub_load": 0.54,
+    "rain": 0.54,
+    "weight_kg": 0.42,
+    "weekday": 0.07,
+    "month": 0.01,
+    "hub": 0.0
+  },
+  "whatif_hub3": {
+    "rows": 217,
+    "avg_pred_before": 21.52,
+    "avg_pred_after": 20.38,
+    "saving_hours": 1.14
+  }
+}

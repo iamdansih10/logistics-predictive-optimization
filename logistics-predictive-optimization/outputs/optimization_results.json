@@ -1,0 +1,73 @@
+{
+  "route": {
+    "stops": 15,
+    "as_received_km": 299.3,
+    "random_avg_km": 279.7,
+    "nearest_neighbour_km": 121.3,
+    "two_opt_km": 115.4,
+    "saving_vs_received_pct": 61.4
+  },
+  "allocation": {
+    "demand": 600,
+    "value_of_hour_rs": 120,
+    "cheapest_first": {
+      "rate_card_cost": 2819200,
+      "predicted_hours_total": 14391.0,
+      "avg_hours_per_shipment": 23.98,
+      "generalised_cost": 4546069
+    },
+    "optimised": {
+      "rate_card_cost": 2704100,
+      "predicted_hours_total": 14249.0,
+      "avg_hours_per_shipment": 23.75,
+      "generalised_cost": 4413994
+    },
+    "carrier_totals_baseline": {
+      "A": 220,
+      "B": 200,
+      "C": 120,
+      "D": 60
+    },
+    "carrier_totals_optimised": {
+      "A": 220,
+      "B": 200,
+      "C": 120,
+      "D": 60
+    },
+    "saving_generalised_pct": 2.9,
+    "hours_saved_per_shipment": 0.23
+  },
+  "pred_hours_example": {
+    "A": 23.9,
+    "B": 24.1,
+    "C": 27.5,
+    "D": 24.3
+  },
+  "sensitivity": {
+    "0": {
+      "carrier_C_shipments": 120,
+      "avg_hours": 23.75,
+      "rate_card_cost": 2704100
+    },
+    "120": {
+      "carrier_C_shipments": 120,
+      "avg_hours": 23.75,
+      "rate_card_cost": 2704100
+    },
+    "250": {
+      "carrier_C_shipments": 120,
+      "avg_hours": 23.75,
+      "rate_card_cost": 2704100
+    },
+    "400": {
+      "carrier_C_shipments": 120,
+      "avg_hours": 23.75,
+      "rate_card_cost": 2704100
+    },
+    "600": {
+      "carrier_C_shipments": 20,
+      "avg_hours": 23.37,
+      "rate_card_cost": 2834100
+    }
+  }
+}
